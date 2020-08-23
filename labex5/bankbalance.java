@@ -17,6 +17,7 @@ public class bankbalance {
     public static void main(String[] args) {
        Scanner obj=new Scanner(System.in);
        System.out.println("WELCOME TO BANKING SERVICES!!");
+       bank b;
        int ch;
        do
        {
@@ -30,16 +31,16 @@ public class bankbalance {
            switch(choice)
            {
                case 1:
-                   bankA a=new bankA();
-                   System.out.println("Balance amount is: "+"$"+a.getBalance());
+                   b=new bankA();
+                   System.out.println("Balance amount is: "+"$"+b.getBalance());
                    break;
                case 2:
-                   bankB b=new bankB();
+                   b=new bankB();
                    System.out.println("Balance amount is: "+"$"+b.getBalance());
                    break;
                case 3:
-                   bankC c=new bankC();
-                   System.out.println("Balance amount is: "+"$"+c.getBalance());
+                   b=new bankC();
+                   System.out.println("Balance amount is: "+"$"+b.getBalance());
                    break;
                default:
                    System.out.println("YOUR CHOICE IS OUT OF LIMIT!!");
